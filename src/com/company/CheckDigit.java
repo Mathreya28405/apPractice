@@ -11,7 +11,9 @@ public class CheckDigit {
     }
 
     /*
-    A private static int variable would have to be created to keep track of the total number of times isValid returns false.
-    A method can be written with an if statement where if the return of isValid is false, count increases by one.
+    A private static variable of type int would have to be created. private static int numTimesInvalid.
+    Accessor method that returns numTimesInvalid. public int getNumTimesInvalid()
+    When isValid returns false, count increases by one. 
+    Create a static method returning an int that returns the value of numTimesInvalid
      */
 }

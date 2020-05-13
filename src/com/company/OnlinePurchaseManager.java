@@ -11,8 +11,8 @@ public class OnlinePurchaseManager {
     public int countElectronicsByMaker(String maker)
     {
         int count = 0;
-        for (int i = 0; i < purchases.size(); i++) {
-            if (purchases.get(i).getMaker().equals(maker) && purchases.get(i).isElectronic()) {
+        for (Gizmo x : purchases) {
+            if (x.getMaker().equals(maker) && x.isElectronic()) {
                 count++;
             }
         }
@@ -32,9 +32,10 @@ public class OnlinePurchaseManager {
     }
 
     /*
-    public double getCheapestGizmoByMaker()
-    In the Gizmo class would have to create a private double object for price
-    In the Gizmo class would have to create an accessor method that returns the price of the object
+    public Gizmo getCheapestGizmoByMaker(String maker)
+    Private instance variable for price in the Gizmo class of type double
+    Add an argument to constructor of the Gizmo class of type double to initialize price
+    In the Gizmo class would have to create an accessor method that returns the price of the object. Public double getPrice()
      */
 
 
